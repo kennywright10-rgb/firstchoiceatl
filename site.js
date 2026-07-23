@@ -6,8 +6,8 @@
 
   var BRAND_DESC = "We help independent plumbers, HVAC companies, electricians, roofers, and other home service businesses become the trades AI recommends &mdash; through Google Maps dominance, automated reviews, and AI-structured websites. No ad spend. Guaranteed results.";
   var ADDR_LINE = "6815 Sunbriar Drive, Cumming, GA 30040";
-  var PHONE_DISPLAY = "(678) 478-0973";
-  var PHONE_TEL = "6784780973";
+  var PHONE_DISPLAY = "(678) 661-5190";
+  var PHONE_TEL = "6786615190";
   var EMAIL = "info@firstchoicelocalatl.com";
   var BRAND_TAGLINE = "We help home service businesses become the first choice.";
 
