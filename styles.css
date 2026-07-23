@@ -155,6 +155,9 @@ h3{font-size:22px;font-weight:800}
 .marquee-track span::after{content:'•';position:absolute;right:-28px;color:rgba(255,255,255,.55)}
 .marquee-track span:last-child::after{content:''}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.marquee-ai{background:var(--ai)}
+.marquee-ai-track{animation-direction:reverse}
+.marquee-label{text-align:center;padding:20px 0 0;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-500);background:#fff}
 
 /* COMPARISON (Two Versions) */
 .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}

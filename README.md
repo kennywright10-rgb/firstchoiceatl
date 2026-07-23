@@ -4,21 +4,22 @@ Static site for First Choice, a local SEO agency for home service businesses (pl
 
 ## Structure
 
-- `index.html`, `services.html`, `service-maps.html`, `service-reputation.html`, `service-ai.html`, `service-website.html`, `audit.html`, `book-a-call.html` — the 8 pages
-- `styles.css` — shared design system (colors, layout, components) used by every page
-- `site.js` — shared nav, announcement bar, footer, form-submit handler, and testimonial carousel, injected at runtime into every page
+- `index.html`, `services.html`, `service-maps.html`, `service-reputation.html`, `service-ai.html`, `service-website.html`, `audit.html`, `book-a-call.html` — the 8 main site pages
+- `styles.css` — shared design system (colors, layout, components) used by every main site page
+- `site.js` — shared nav, announcement bar, footer, form-submit handler, and testimonial carousel, injected at runtime into every main site page
+- `seoaudit.html` — standalone Google Ads landing page ("AI SEO Services — Atlanta Metro"). Self-contained (own inline CSS/JS, no site nav) so paid traffic can't click away before converting. See `First Choice - Google Ads Plan.docx` for the full campaign plan this page pairs with.
 
-Editing the header, footer, or global styles only requires changing `site.js` / `styles.css` — the individual HTML pages don't need to be touched.
+Editing the header, footer, or global styles only requires changing `site.js` / `styles.css` — the individual main-site HTML pages don't need to be touched. `seoaudit.html` is intentionally independent of that system and must be edited directly.
 
 ## Before going live
 
-Both `audit.html` and `book-a-call.html` post to Formspree with a placeholder form ID:
+`audit.html`, `book-a-call.html`, and `seoaudit.html` all post to Formspree with a placeholder form ID:
 
 ```
 action="https://formspree.io/f/YOUR_FORM_ID"
 ```
 
-Replace `YOUR_FORM_ID` in both files with your real Formspree form IDs before launch.
+Replace `YOUR_FORM_ID` in all three files with real Formspree form IDs before launch. `seoaudit.html` also has a placeholder Google Ads conversion tag (`AW-CONVERSION_ID/CONVERSION_LABEL`) in its inline script — replace that with your real conversion ID/label once the Google Ads conversion action is set up.
 
 ## Deploying to Vercel
 
@@ -29,14 +30,13 @@ Replace `YOUR_FORM_ID` in both files with your real Formspree form IDs before la
 
 ### Push to GitHub (run in git bash)
 
+The repo is already initialized in this folder and connected to `kennywright10-rgb/firstchoiceatl`. For any future update, just:
+
 ```bash
-cd "/c/Users/ken/AppData/Roaming/Claude/local-agent-mode-sessions/88022b2f-2b47-4100-aa66-e6ec04d37f13/b21fc09e-3e25-469c-b69d-760fde4ad2b2/local_62f0cb03-baea-4827-a748-686912d03763/outputs"
-git init
+cd "/c/Users/ken/Desktop/claude/First Choice/General"
 git add .
-git commit -m "Initial commit: First Choice site"
-git branch -M main
-git remote add origin https://github.com/kennywright10-rgb/firstchoiceatl.git
-git push -u origin main
+git commit -m "Describe what changed"
+git push
 ```
 
-GitHub may prompt for authentication (browser sign-in or a personal access token as the password) on the `push` step — that's expected.
+GitHub may prompt for authentication (browser sign-in or a personal access token as the password) — that's expected. Since Vercel is connected to this GitHub repo, every push to `main` triggers a new deployment automatically.
