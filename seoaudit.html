@@ -6,6 +6,15 @@
 <title>AI SEO Services for Home Service Businesses | Atlanta Metro | First Choice</title>
 <meta name="description" content="Get ranked on Google Maps and recommended by ChatGPT, Perplexity & Google AI. AI SEO built exclusively for Atlanta-metro plumbers, HVAC, electricians & roofers. Free audit.">
 <meta name="robots" content="noindex, follow">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16649773312"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16649773312');
+</script>
 <style>
 :root{
   --navy:#0B1F3A; --blue:#1A6EFF; --blue-light:#3B8BFF; --coral:#F07248; --coral-light:#F5895E;
@@ -408,7 +417,7 @@ function handlePpcSubmit(e){
       form.style.display = 'none';
       success.style.display = 'block';
       if(typeof gtag === 'function'){
-        gtag('event', 'conversion', { 'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL' });
+        gtag('event', 'conversion', { 'send_to': 'AW-16649773312/CONVERSION_LABEL' });
       }
     } else {
       throw new Error('Submission failed');
