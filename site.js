@@ -8,7 +8,7 @@
   var ADDR_LINE = "6815 Sunbriar Drive, Cumming, GA 30040";
   var PHONE_DISPLAY = "(678) 478-0973";
   var PHONE_TEL = "6784780973";
-  var EMAIL = "info@firstchoiceatl.com";
+  var EMAIL = "info@firstchoicelocalatl.com";
   var BRAND_TAGLINE = "We help home service businesses become the first choice.";
 
   function navLinks(isHome) {
