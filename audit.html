@@ -61,7 +61,9 @@
         <h2 style="font-size:26px">Claim Your Free Audit</h2>
         <p style="color:var(--gray-700);margin-top:8px">Takes 90 seconds. We'll do the rest.</p>
       </div>
-      <form id="auditForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="return handleFormSubmit(event,'auditForm','auditSuccess','auditError')">
+      <form id="auditForm" action="https://formspree.io/f/xqeryerj" method="POST" onsubmit="return handleFormSubmit(event,'auditForm','auditSuccess','auditError')">
+        <input type="hidden" name="source" value="Free Audit Page (audit.html)">
+        <input type="hidden" name="_subject" value="New Free Audit Request — First Choice">
         <div id="auditError" class="form-error">Something went wrong. Please try again or email info@firstchoicelocalatl.com.</div>
         <div class="form-row">
           <div class="field"><label for="a-fname">First Name *</label><input type="text" id="a-fname" name="first_name" required placeholder="Jane"></div>

@@ -69,7 +69,9 @@
         <h2 style="font-size:24px">Schedule Your Call</h2>
         <p style="color:var(--gray-700);margin-top:6px;font-size:14px">We'll confirm your time within 4 business hours.</p>
       </div>
-      <form id="bookForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="return handleFormSubmit(event,'bookForm','bookSuccess','bookError')">
+      <form id="bookForm" action="https://formspree.io/f/xqeryerj" method="POST" onsubmit="return handleFormSubmit(event,'bookForm','bookSuccess','bookError')">
+        <input type="hidden" name="source" value="Book a Call Page (book-a-call.html)">
+        <input type="hidden" name="_subject" value="New Strategy Call Request — First Choice">
         <div id="bookError" class="form-error">Something went wrong. Please try again or email info@firstchoicelocalatl.com.</div>
         <div class="form-row">
           <div class="field"><label for="b-fname">First Name *</label><input type="text" id="b-fname" name="first_name" required placeholder="Marcus"></div>
