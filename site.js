@@ -45,7 +45,7 @@
       '  <div class="mobile-menu" id="mobileMenu">' + links +
       '<a href="book-a-call.html">Book a Call</a><a href="audit.html">Get Free Audit</a></div>' +
       "</nav>" +
-      '<div class="announce">Be the business AI actually recommends: <a href="audit.html">Download the Free Local Visibility Guide &rarr;</a></div>' +
+      '<div class="announce">Be the business AI actually recommends: <a href="guide.html">Download the Free Local Visibility Guide &rarr;</a></div>' +
       "</div>"
     );
   }
